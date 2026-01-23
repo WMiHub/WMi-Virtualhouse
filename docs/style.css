@@ -223,3 +223,15 @@ nav a {
     grid-template-columns: 1fr 1fr;
   }
 }
+
+.products-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+@media (min-width: 700px) {
+  .products-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
