@@ -98,6 +98,41 @@
     }
   </style>
 </head>
+  /* PRODUCTS */
+.products {
+  text-align: center;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.product-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  background: #fff;
+}
+
+.product-card img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+  border-radius: 6px;
+}
+
+.product-card h3 {
+  margin: 15px 0 5px;
+}
+
+.product-card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
 
 <body>
 
@@ -332,6 +367,45 @@
 
   </div>
 </section>
+  <!-- PRODUCTS -->
+<section class="products" id="products">
+  <h2>Our Products</h2>
+  <p>Quality, trusted products to support everyday life.</p>
+
+  <div class="product-grid">
+
+    <div class="product-card">
+      <img src="assets/images/products/menthol-camphor.jpg" alt="Menthol Camphor">
+      <h3>Menthol Camphor</h3>
+      <p>Natural health & household product.</p>
+    </div>
+
+    <div class="product-card">
+      <img src="assets/images/products/aloe-vera.png" alt="Aloe Vera">
+      <h3>Aloe Vera</h3>
+      <p>Soothing and natural care.</p>
+    </div>
+
+    <div class="product-card">
+      <img src="assets/images/products/dor-range.png" alt="D'Or Range">
+      <h3>D'Or Range</h3>
+      <p>Classic fragrance collection.</p>
+    </div>
+
+    <div class="product-card">
+      <img src="assets/images/products/kure-all.png" alt="Kure-All">
+      <h3>Kure-All</h3>
+      <p>Trusted traditional remedy.</p>
+    </div>
+
+  </div>
+</section>
+<div class="product-card">
+  <img src="assets/images/products/new-product.png" alt="New Product">
+  <h3>New Product</h3>
+  <p>Short description.</p>
+</div>
+
   <!-- BENEFITS -->
   <section class="benefits">
     <h2>What You Will Gain</h2>
