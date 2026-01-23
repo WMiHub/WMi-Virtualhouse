@@ -212,4 +212,14 @@ nav a {
   inset: 0;
   background: rgba(0, 0, 0, 0.45); /* dark overlay */
 }
+.products-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
 
+@media (min-width: 700px) {
+  .products-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
