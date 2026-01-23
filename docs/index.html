@@ -1,20 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WMi Virtualhouse</title>
-    <link rel="stylesheet" href="style.css">
+  <style>
+    .hero {
+      background-image: url("assets/images/modern-house.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.45);
+    }
+
+    .hero h1 {
+      color: white;
+      font-size: 3rem;
+      z-index: 1;
+    }
+  </style>
 </head>
-<body><!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome | WMi Virtualhouse</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+
 
     <!-- HERO SECTION -->
     <section class="hero">
@@ -37,7 +49,12 @@
     </section>
     
     <script src="script.js"></script>
+<body>
+  <section class="hero">
+    <h1>WMi Virtualhouse</h1>
+  </section>
 </body>
+
 </html>
     <h1>Welcome to WMi Virtualhouse</h1>
     <p>Explore Beyond!</p>
