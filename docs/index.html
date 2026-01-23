@@ -1,19 +1,32 @@
-<section class="hero">
-  <h1>WMi Virtualhouse</h1>
-</section>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <title>WMi Virtualhouse</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    /* HERO SECTION */
     .hero {
-      background-image: url("WMi-Virtualhouse
-/modern-house.png");
+      background-image: url("assets/images/modern-house.png");
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
       height: 60vh;
+
       display: flex;
       align-items: center;
       justify-content: center;
+      text-align: center;
+
       position: relative;
+      color: white;
     }
 
     .hero::before {
@@ -23,185 +36,142 @@
       background: rgba(0, 0, 0, 0.45);
     }
 
-    .hero h1 {
-      color: white;
-      font-size: 3rem;
+    .hero-content {
+      position: relative;
       z-index: 1;
+      max-width: 800px;
+      padding: 20px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+    }
+
+    .cta-button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 24px;
+      background: #25D366;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    /* SECTIONS */
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .mission,
+    .benefits,
+    .about {
+      text-align: center;
+    }
+
+    .benefit-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .benefit-box {
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 30px 10px;
     }
   </style>
 </head>
 
-
-    <!-- HERO SECTION -->
-    <section class="hero">
-        <h1>WMi Virtualhouse</h1>
-        <p>Your journey to create a new financial future starts here.  
-        One small step can change everything.</p>
-
-        <a href="#start" class="cta-button">Get Started</a>
-    </section> 
-
-    <!-- MISSION SECTION -->
-    <section class="mission" id="start">
-        <h2>Your New Beginning Starts Here</h2>
-        <p>
-            No matter what you’ve been through, you can rebuild.  
-            You can rise again. You can take back control of your future.  
-            WMi Virtualhouse gives you the tools, support, and guidance  
-            to build a stable income and a stronger life.
-        </p>
-    </section>
-    
-    <script src="script.js"></script>
 <body>
+
+  <!-- HERO -->
   <section class="hero">
-    <h1>WMi Virtualhouse</h1>
+    <div class="hero-content">
+      <h1>WMi Virtualhouse</h1>
+      <p>
+        Your journey to create a new financial future starts here.<br>
+        One small step can change everything.
+      </p>
+      <a href="#start" class="cta-button">Get Started</a>
+    </div>
   </section>
-</body>
 
-</html>
-    <h1>Welcome to WMi Virtualhouse</h1>
-    <p>Explore Beyond! Visit WMi Hub page on Facebook</p>
-      
-  <a href="#income">Income</a>
-      
-       <div id="income">
-           
-  <img src="BUILD UR LIFE.jpg" alt="Income" style="width:100%; max-width:400px;">   
-      <div id="income">
-          
-  <img src="A wil DuePoint Card.png" alt="Income" style="width:100%; max-width:400px;">   
-          
-    <div class="section">
-        
-  <a href="#contact">Contact</a>
-        
-  </nav>
-        
-        Modern Solutions for Everyday Life<br>
-        and Building Asset-Based Recurring Income
+  <!-- MISSION -->
+  <section class="mission" id="start">
+    <h2>Your New Beginning Starts Here</h2>
+    <p>
+      No matter what you’ve been through, you can rebuild.<br>
+      You can rise again. You can take back control of your future.<br><br>
+      WMi Virtualhouse gives you the tools, support, and guidance
+      to build a stable income and a stronger life.
+    </p>
+  </section>
+
+  <!-- BENEFITS -->
+  <section class="benefits">
+    <h2>What You Will Gain</h2>
+
+    <div class="benefit-container">
+      <div class="benefit-box">
+        <h3>Guidance & Support</h3>
+        <p>Simple, clear steps to help you grow and rebuild.</p>
+      </div>
+
+      <div class="benefit-box">
+        <h3>Real Income Tools</h3>
+        <p>Opportunities with systems that help you earn from home.</p>
+      </div>
     </div>
-    
-    <script src="script.js"></script>
+  </section>
 
-<!-- CALL TO ACTION SECTION -->
-          
-    <section class="cta-final">
-        <h2>Ready to Take the First Step?</h2>
-        <p>You don’t have to do life alone. Let’s Ignite, Rise, and Shine — Together.</p>
+  <!-- ABOUT -->
+  <section class="about">
+    <h2>About Me</h2>
+    <p>
+      My name is Mr W Sisam. My mission is to help people rise
+      financially, emotionally, and spiritually.
+    </p>
+    <p>
+      Life has storms, but with the right support,
+      you can rebuild stronger than before.
+    </p>
+  </section>
 
-        <div id="contact">
-  <p>Contact us here</p>
-</div>
-    </head>
-        <a href="https://wa.me/+27783798191" class="cta-whatsapp" target="_blank">
-            Message Me on WhatsApp 
-        </a>
-        
-    <script src="script.js"></script>
-</body>
-</html>
-    </style>
+  <!-- CONTACT -->
+  <section id="contact" style="text-align:center;">
+    <h2>Contact</h2>
+    <p>
+      <a href="https://wa.me/27783798191" class="cta-button" target="_blank">
+        Message Me on WhatsApp
+      </a>
+    </p>
+    <p>
+      <a href="mailto:wilmendit@gmail.com">✉️ wilmendit@gmail.com</a>
+    </p>
+  </section>
 
-    <div class="header">Inventory</div>
-        
-    <section id="watkins" class="section"> <h2>Watkins</h2> <div class="product-box">  <img src="4 MENTHOL CAMPHOR RANGE.jpg" alt="MENTHOL CAMPHOR RANGE" style="width:100%; max-width:400px;">    <h3>MENTHOL CAMPHOR </h3> <p>Natural health & household products.</p> </div> </section> 
-    <section id="watkins" class="section"> <h2>Watkins</h2> <div class="product-box">  <img src="7 ALOE VERA.png" alt="ALOE VERA" style="width:100%; max-width:400px;">    <h3>ALOE VERA </h3> <p>Natural health & household products.</p> </div> </section> 
-    <section id="watkins" class="section"> <h2>Watkins</h2> <div class="product-box">  <img src="8 DIFFRANCE RANGE.png" alt="DIFFRANCE" style="width:100%; max-width:400px;">     <h3>DIFFRANCE</h3> <p>Natural health & household products.</p> </div> </section> 
-    <section id="watkins" class="section"> <h2>Watkins</h2> <div class="product-box">  <img src="9 D'OR RANGE.png" alt="D'OR RANGE" style="width:100%; max-width:400px;">      <h3>D'OR RANGE </h3> <p>Natural health & household products.</p> </div> </section> 
-    <section id="watkins" class="section"> <h2>Watkins</h2> <div class="product-box">  <img src="10 LA FIEVRE.png" alt="LA FIEVRE" style="width:100%; max-width:400px;">      <h3>LA FIEVRE </h3> <p>Natural health & household products.</p> </div> </section> 
-    <section id="watkins" class="section"> <h2>Watkins</h2> <div class="product-box">  <img src="6 JUICE AND COUGH RANGE.png" alt="JUICE AND COUGH" style="width:100%; max-width:400px;">      <h3>JUICE AND COUGH RANGE </h3> <p>Natural health & household products.</p> </div> </section>
-    <section id="watkins" class="section"> <h2>Watkins</h2> <div class="product-box">  <img src="11 TRACY.png" alt="TRACY" style="width:100%; max-width:400px;">      <h3>Watkins TRACY</h3> <p>Natural health & household products.</p> </div> </section>
-    <section id="watkins" class="section"> <h2>Watkins</h2> <div class="product-box">  <img src="12 SO DELICIOUS.png" alt="SO DELICIOUS" style="width:100%; max-width:400px;">      <h3>SO DELICIOUS </h3> <p>Natural health & household products.</p> </div> </section>
-    <section id="watkins" class="section"> <h2>Watkins</h2> <div class="product-box">  <img src="13 EMBRACE.png" alt="EMBRACE" style="width:100%; max-width:400px;">      <h3>Watkins EMBRACE </h3> <p>Natural health & household products.</p> </div> </section>
-    <section id="watkins" class="section"> <h2>Watkins</h2> <div class="product-box">  <img src="14 KAYLA.png" alt="KAYLA" style="width:100%; max-width:400px;">      <h3>Watkins KAYLA</h3> <p>Natural health & household products.</p> </div> </section>
-    <section id="watkins" class="section"> <h2>Watkins</h2> <div class="product-box">  <img src="15 LEGEND.png" alt="LEGEND" style="width:100%; max-width:400px;">      <h3>Watkins LEGEND </h3> <p>Natural health & household products.</p> </div> </section>
-    <section id="watkins" class="section"> <h2>Watkins</h2> <div class="product-box">  <img src="16 APOLLO.png" alt="APOLLO" style="width:100%; max-width:400px;">      <h3>Watkins APOLLO</h3> <p>Natural health & household products.</p> </div> </section>
-    <section id="watkins" class="section"> <h2>Watkins</h2> <div class="product-box">  <img src="3 COMFIFEET RANGE.png" alt="COMFIFEET RANGE" style="width:100%; max-width:400px;">      <h3>COMFIFEET RANGE </h3> <p>Natural health & household products.</p> </div> </section>
-    <section id="watkins" class="section"> <h2>Watkins</h2> <div class="product-box">  <img src="17 JESS.png" alt="JESS" style="width:100%; max-width:400px;">      <h3>Watkins JESS</h3> <p>Natural health & household products.</p> </div> </section>
-    <section id="watkins" class="section"> <h2>Watkins</h2> <div class="product-box">  <img src="18 RUSSIAN LEATHER.png" alt="RUSSIAN LEATHER" style="width:100%; max-width:400px;">      <h3>RUSSIAN LEATHER </h3> <p>Natural health & household products.</p> </div> </section>
-    <section id="watkins" class="section"> <h2>Watkins</h2> <div class="product-box">  <img src="19 SHEER VELVET.png" alt="SHEER VELVET" style="width:100%; max-width:400px;">      <h3>SHEER VELVET </h3> <p>Natural health & household products.</p> </div> </section>
-    <section id="watkins" class="section"> <h2>Watkins</h2> <div class="product-box">  <img src="5 KURE-ALL.png" alt="KURE-ALL" style="width:100%; max-width:400px;">      <h3>KURE-ALL</h3> <p>Natural health & household products.</p> </div> </section>
-    <section id="watkins" class="section"> <h2>Watkins</h2> <div class="product-box">  <img src="2 ATS RANGE.png" alt="ATS RANGE" style="width:100%; max-width:400px;">      <h3>ATS RANGE </h3> <p>Natural health & household products.</p> </div> </section>
-    <section id="watkins" class="section"> <h2>Watkins</h2> <div class="product-box">  <img src="20 ATS & TEA RANGE.png" alt="ATS & TEA RANGE" style="width:100%; max-width:400px;">      <h3>ATS & TEA RANGE </h3> <p>Natural health & household products.</p> </div> </section>
-    <section id="watkins" class="section"> <h2>Watkins</h2> <div class="product-box">  <img src="21 WOBBLES.png" alt="WOBBLES" style="width:100%; max-width:400px;">      <h3>Watkins WOBBLES</h3> <p>Natural health & household products.</p> </div> </section>
-    <section id="watkins" class="section"> <h2>Watkins</h2> <div class="product-box">  <img src="HERBAL D WONDER B.png" alt="HERBAL D WONDER B" style="width:100%; max-width:400px;">      <h3>Watkins HERBAL D WONDER B </h3> <p>Natural health & household products.</p> </div> </section>
-       
-        <a href="https://wa.me/+27783798191" class="cta-whatsapp" target="_blank">
-            Message Me on WhatsApp 
-        </a>
-         
-        
-</section>
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 WMi Virtualhouse. All rights reserved.</p>
+    <p>Built with purpose. Inspired by Faith in Yeshua.</p>
+  </footer>
 
-<section id="locks" class="section"> <h2>Locks</h2> <div class="product-box"> <img src="locks.jpg" alt="Locks"> <h3>Security Locks</h3> <p> Visit WMi Hub page on Facebook</p> </div> </section> 
-  </nav>
-        
-        
-         <a href="mailto:wilmendit@gmail.com?subject=INFORMATION" class="cta-email">
-             
-          ✉️ wilmendit@gmail.com
-</a>
-<section id="beardkits" class="section"> <h2>Beard Kits</h2> <div class="product-box"> <img src="beard kit.jpg" alt="Beard Kits"> <h3>Beard Care Kits</h3> <p>Premium grooming essentials.</p> </div> </section> 
-<section id="beardkits" class="section"> <h2>Beard Kits</h2> <div class="product-box"> <img src="beard kit usage.jpg" alt="Beard Kits"> <h3>Beard Care Kits</h3> <p>Premium grooming essentials.</p> </div> </section> 
-
-        <a href="#contact">Contact</a>
-</section>
-
-<section id="vehicles" class="section"> <h2>Vehicles Found Online</h2> <div class="product-box"> <img src="Vehicles.png" alt="vehicles"> <h3>Ask me to view Vehicles</h3> <p>Vehicles.</p> </div> </section> 
-<section id="income" class="section">
-  <h2>Vehicles from Cape Town and Boksburg Areas enquire about it </h2>
-  <p>Ask to Visit Dealer.</p>
-</section>
-
-  <nav>
-  <a href="#watkins">Watkins</a>
-      
-    </div>
-        <a href="#contact">Contact</a>
-        
-  </nav>
-
-
-          <!-- BENEFITS SECTION -->
-    <section class="benefits">
-        <h2>What You Will Gain</h2>
-
-        <div class="benefit-container">
-
-            <div class="benefit-box">
-                <h3>Guidance & Support</h3>
-                <p>You’re not alone. Get simple, clear steps to help you grow and rebuild.</p>
-            </div>
-
-            <div class="benefit-box">
-                <h3>Real Income Tools</h3>
-                <p>Access a business opportunity with systems that can help you earn from home.</p>
-            </div>
-            
-    </section>
-    </section>
-    
-<!-- ABOUT ME SECTION -->
-    <section class="about">
-        <h2>About Me</h2>
-        <p>
-            My name is Mr W Sisam, and my mission is create a platform to assist people rise,  
-            financially, emotionally, and spiritually.  
-            Life has its storms, but with the right support, you can rebuild  
-            stronger than before.
-        </p>
-        <p>
-            I’ve walked through challenges, which is why I’m committed  
-            to guiding others with honesty, faith, and practical tools  
-            that truly make a difference.
-        </p>
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="footer">
-        <p>© 2025 WMi Virtualhouse. All rights reserved.</p>
-        <p>Built with purpose. Inspired by Faith in Yeshua.</p>
-    </footer>
 </body>
 </html>
