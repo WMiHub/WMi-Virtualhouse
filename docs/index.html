@@ -12,19 +12,17 @@
       line-height: 1.6;
     }
 
-    /* HERO SECTION */
+    /* HERO */
     .hero {
       background-image: url("assets/images/modern-house.jpg");
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
       height: 60vh;
-
       display: flex;
       align-items: center;
       justify-content: center;
       text-align: center;
-
       position: relative;
       color: white;
     }
@@ -33,7 +31,7 @@
       content: "";
       position: absolute;
       inset: 0;
-      background: rgba(0, 0, 0, 0.45);
+      background: rgba(0,0,0,0.45);
     }
 
     .hero-content {
@@ -70,12 +68,44 @@
       margin: auto;
     }
 
-    .mission,
-    .benefits,
-    .about {
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    /* PRODUCTS */
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 24px;
+      margin-top: 30px;
+    }
+
+    .product-box {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 15px;
+      background: #fff;
       text-align: center;
     }
 
+    .product-box img {
+      width: 100%;
+      max-height: 200px;
+      object-fit: contain;
+      border-radius: 6px;
+    }
+
+    .product-box h3 {
+      margin: 15px 0 5px;
+    }
+
+    .product-box p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    /* BENEFITS */
     .benefit-container {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -87,6 +117,7 @@
       padding: 20px;
       border: 1px solid #ddd;
       border-radius: 8px;
+      text-align: center;
     }
 
     /* FOOTER */
@@ -98,391 +129,161 @@
     }
   </style>
 </head>
-  
 
 <body>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-content">
-      <h1>WMi Virtualhouse</h1>
-      <p>
-        Your journey to create a new financial future starts here.<br>
-        One small step can change everything.
-      </p>
-      <a href="#start" class="cta-button">Get Started</a>
-    </div>
-  </section>
-
-  <!-- MISSION -->
-  <section class="mission" id="start">
-    <h2>Your New Beginning Starts Here</h2>
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>WMi Virtualhouse</h1>
     <p>
+      Your journey to create a new financial future starts here.<br>
+      One small step can change everything.
+    </p>
+    <a href="#start" class="cta-button">Get Started</a>
+  </div>
+</section>
+
+<!-- MISSION -->
+<section id="start">
+  <h2>Your New Beginning Starts Here</h2>
+  <p style="text-align:center;">
     You can rebuild.<br>
-      You can rise again. You can take back control of your bright future.<br><br>
-      WMi Virtualhouse gives you the tools, support, and guidance
-      to build a stable income and a stronger life.
-    </p>
-  </section>
-<section id="watkins" class="section">
-  <h2>Watkins</h2>
+    You can rise again. You can take back control of your bright future.<br><br>
+    WMi Virtualhouse gives you the tools, support, and guidance
+    to build a stable income and a stronger life.
+  </p>
+</section>
+
+<!-- WATKINS -->
+<section id="watkins">
+  <h2>Watkins Products</h2>
 
   <div class="products-grid">
-
     <div class="product-box">
-      <img src="assets/images/4 MENTHOL CAMPHOR RANGE.jpg" alt="Watkins Product">
-      <h3>MENTHOL CAMPHOR RANGE</h3>
+      <img src="assets/images/4%20MENTHOL%20CAMPHOR%20RANGE.jpg" alt="">
+      <h3>Menthol Camphor Range</h3>
       <p>Natural health & household products.</p>
     </div>
 
     <div class="product-box">
-      <img src="7 ALOE VERA.png" alt="Watkins Product">
-      <h3>ALOE VERA</h3>
+      <img src="assets/images/7%20ALOE%20VERA.png" alt="">
+      <h3>Aloe Vera</h3>
       <p>Trusted everyday essentials.</p>
     </div>
 
-  </div>
-</section>
-  <section id="watkins" class="section">
-  <h2>Watkins</h2>
-
-  <div class="products-grid">
-
     <div class="product-box">
-      <img src="assets/images/8 DIFFRANCE RANGE.png" alt="Watkins Product">
-      <h3>DIFFRANCE</h3>
+      <img src="assets/images/8%20DIFFRANCE%20RANGE.png" alt="">
+      <h3>Diffrance</h3>
       <p>Natural health & household products.</p>
     </div>
 
     <div class="product-box">
-      <img src="assets/images/9 D'OR RANGE.png" alt="Watkins Product">
-      <h3>D'OR</h3>
+      <img src="assets/images/9%20D%27OR%20RANGE.png" alt="">
+      <h3>D'Or</h3>
       <p>Trusted everyday essentials.</p>
     </div>
-
   </div>
+
+  <p style="text-align:center;">
+    <a href="https://wa.me/27783798191" class="cta-button" target="_blank">
+      Message Me on WhatsApp
+    </a>
+  </p>
 </section>
-   <section id="watkins" class="section">
-  <h2>Watkins</h2>
+
+<!-- OTHER PRODUCTS -->
+<section id="other-products">
+  <h2>Other Products</h2>
 
   <div class="products-grid">
-
     <div class="product-box">
-      <img src="assets/images/10 LA FIEVRE.png" alt="Watkins Product">
-      <h3>LA FIEVRE</h3>
-      <p>Natural health & household products.</p>
+      <img src="assets/images/Car%20Air%20Fresheners.jpeg" alt="">
+      <h3>Car Air Fresheners</h3>
+      <p>Bulk orders only – South Africa</p>
     </div>
 
     <div class="product-box">
-      <img src="assets/images/6 JUICE & COUGH SYRUP.png" alt="Watkins Product">
-      <h3>JUICE AND COUGH SYRUP</h3>
-      <p>Trusted everyday essentials.</p>
+      <img src="assets/images/Fly%20Ribbon.jpeg" alt="">
+      <h3>Fly Ribbon</h3>
+      <p>Bulk orders only</p>
     </div>
- <p>
-      <a href="https://wa.me/27783798191" class="cta-button" target="_blank">
-        Message Me on WhatsApp
-      </a>
-    </p>
   </div>
 </section>
-   <section id="watkins" class="section">
-  <h2>Watkins</h2>
 
-  <div class="products-grid">
-
-    <div class="product-box">
-      <img src="assets/images/11 TRACY.png" alt="Watkins Product">
-      <h3>TRACY</h3>
-      <p>Natural health & household products.</p>
-    </div>
-
-    <div class="product-box">
-      <img src="assets/images/12 SO DELICIOUS.png" alt="Watkins Product">
-      <h3>SO DELICIOUS</h3>
-      <p>Trusted everyday essentials.</p>
-    </div>
-
-  </div>
-</section>
-   <section id="watkins" class="section">
-  <h2>Watkins</h2>
-
-  <div class="products-grid">
-
-    <div class="product-box">
-      <img src="assets/images/13 EMBRACE.png" alt="Watkins Product">
-      <h3>EMBRACE</h3>
-      <p>Natural health & household products.</p>
-    </div>
-
-    <div class="product-box">
-      <img src="assets/images/14 KAYLA.png" alt="Watkins Product">
-      <h3>KAYLA</h3>
-      <p>Trusted everyday essentials.</p>
-    </div>
-
-  </div>
-</section>
-   <section id="watkins" class="section">
-  <h2>Watkins</h2>
-
-  <div class="products-grid">
-
-    <div class="product-box">
-      <img src="assets/images/15 LEGEND.png" alt="Watkins Product">
-      <h3>LEGEND</h3>
-      <p>Natural health & household products.</p>
-    </div>
-
-    <div class="product-box">
-      <img src="assets/images/16 APOLLO.png" alt="Watkins Product">
-      <h3>APOLLO</h3>
-      <p>Trusted everyday essentials.</p>
-    </div>
-
-  </div>
-</section>
-   <section id="watkins" class="section">
-  <h2>Watkins</h2>
-
-  <div class="products-grid">
-
-    <div class="product-box">
-      <img src="assets/images/3 COMFIFEET RANGE.png" alt="Watkins Product">
-      <h3>COMFIFEET</h3>
-      <p>Natural health & household products.</p>
-    </div>
-
-    <div class="product-box">
-      <img src="assets/images/17 JESS.png" alt="Watkins Product">
-      <h3>JESS</h3>
-      <p>Trusted everyday essentials.</p>
-    </div>
-
-  </div>
-</section>
-   <section id="watkins" class="section">
-  <h2>Watkins</h2>
-
-  <div class="products-grid">
-
-    <div class="product-box">
-      <img src="assets/images/18 RUSSIAN LEATHER.png" alt="Watkins Product">
-      <h3>RUSSIAN LEATHER</h3>
-      <p>Natural health & household products.</p>
-    </div>
-
-    <div class="product-box">
-      <img src="assets/images/19 SHEER VELVET.png" alt="Watkins Product">
-      <h3>SHEER VELVET</h3>
-      <p>Trusted everyday essentials.</p>
-    </div>
- <p>
-      <a href="https://wa.me/27783798191" class="cta-button" target="_blank">
-        Message Me on WhatsApp
-      </a>
-    </p>
-  </div>
-</section>
-   <section id="watkins" class="section">
-  <h2>Watkins</h2>
-
-  <div class="products-grid">
-
-    <div class="product-box">
-      <img src="assets/images/5 KURE-ALL.png" alt="Watkins Product">
-      <h3>KURE-ALL</h3>
-      <p>Natural health & household products.</p>
-    </div>
-
-    <div class="product-box">
-      <img src="assets/images/2 ATS RANGE.png" alt="Watkins Product">
-      <h3>ATS RANGE</h3>
-      <p>Trusted everyday essentials.</p>
-    </div>
-
-  </div>
-</section>
-     <section id="watkins" class="section">
-  <h2>Watkins</h2>
-
-  <div class="products-grid">
-
-    <div class="product-box">
-      <img src="assets/images/20 ATS & TEA RANGE" alt="Watkins Product">
-      <h3>ATS & TEA RANGE</h3>
-      <p>Natural health & household products.</p>
-    </div>
-
-    <div class="product-box">
-      <img src="assets/images/21 WOBBLES.png" alt="Watkins Product">
-      <h3>WOBBLES</h3>
-      <p>Trusted everyday essentials.</p>
-    </div>
-
-  </div>
-</section>
-       <section id="watkins" class="section">
-  <h2>Watkins</h2>
-
-  <div class="products-grid">
-
-    <div class="product-box">
-      <img src="assets/images/HERBAL D WONDER B.png" alt="Watkins Product">
-      <h3>HERBAL DETERGENT & WONDER BLEACH</h3>
-      <p>Natural health & household products.</p>
-    </div>
-
-    <div class="product-box">
-      <img src="assets/images/F0414 MENTHOL CAMPHOR OINTMENT.png" alt="Watkins Product">
-      <h3>MENTHOL CAMPHOR OINTMENT</h3>
-      <p>Trusted everyday essentials.</p>
-    </div>
-
-  </div>
-</section>
-  <section id="WMi products" class="section">
-  <h2>Car Air Freshener</h2>
-
-  <div class="products-grid">
-
-    <div class="product-box">
-      <img src="assets/images/Car Air Fresheners.jpeg" alt="products">
-      <h3>Car Air Freshener bulk orders only</h3>
-      <p>South Africa.</p>
-    </div>
-
-  </div>
-</section>
-  <section id="WMi products" class="section">
-  <h2>Fly Ribbon</h2>
-
-  <div class="products-grid">
-
-    <div class="product-box">
-      <img src="assets/images/Fly Ribbon.jpeg" alt="products">
-      <h3>Fly Ribbon bulk orders only</h3>
-      <p>South Africa.</p>
-    </div>
- <p>
-      <a href="mailto:wilmendit@gmail.com">✉️ wilmendit@gmail.com</a>
-    </p>
-  </div>
-</section>
-   <section id="Vehicles" class="section">
+<!-- VEHICLES -->
+<section id="vehicles">
   <h2>Vehicles</h2>
 
   <div class="products-grid">
-
     <div class="product-box">
-      <img src="Vehicles.png" alt="Vehicles">
+      <img src="assets/images/Vehicles.png" alt="">
       <h3>Vehicles</h3>
-      <p>Cape Town and Boksburg Areas.</p>
+      <p>Cape Town & Boksburg Areas</p>
     </div>
-
   </div>
 </section>
-      <a href="https://wa.me/27783798191" class="cta-button" target="_blank">
-        Message Me on WhatsApp
-      </a>
-    </p>
-   </div>
- <section id="Locks" class="section">
-  <h2>Bulk Locks Only</h2>
+
+<!-- INCOME -->
+<section id="income">
+  <h2>Income Opportunities</h2>
 
   <div class="products-grid">
+    <div class="product-box">
+      <img src="assets/images/BUILD%20UR%20LIFE.jpg" alt="">
+      <h3>Asset-Based Recurring Income</h3>
+      <p>18+ South Africans only</p>
+    </div>
 
     <div class="product-box">
-      <img src="assets/images/locks.jpg" alt="locks">
-      <h3>Locks for Western Cape Areas</h3>
-      <p> Enquire for quotes via email.</p>
+      <img src="assets/images/introduction%20stockvel.jpeg" alt="">
+      <h3>Green Pastures Stockvel</h3>
+      <p>Generate up to R27,500</p>
     </div>
-
   </div>
 </section>
-   <p>
-      <a href="mailto:wilmendit@gmail.com">✉️ wilmendit@gmail.com</a>
-    </p>
-   </div>
- <section id="Income" class="section">
-  <h2>Create asset-based recurring Income</h2>
 
-  <div class="products-grid">
+<!-- BENEFITS -->
+<section>
+  <h2>What You Will Gain</h2>
 
-    <div class="product-box">
-      <img src="assets/images/BUILD UR LIFE.jpg" alt="Income">
-      <h3>Create asset-based recurring income</h3>
-      <p> 18 older South Africans only.Comment INFO for details</p>
+  <div class="benefit-container">
+    <div class="benefit-box">
+      <h3>Free Guidance & Support</h3>
+      <p>Simple, clear steps to help you rebuild.</p>
     </div>
 
+    <div class="benefit-box">
+      <h3>Real Income Tools</h3>
+      <p>Earn from home with proven systems.</p>
+    </div>
   </div>
 </section>
- <p>
-      <a href="https://wa.me/27783798191" class="cta-button" target="_blank">
-        Message Me on WhatsApp
-      </a>
-    </p>
-   <section id="Income" class="section">
-  <h2>Green Pastures Stockvel, One find 2 members and duplicate to grow tree</h2>
 
-  <div class="products-grid">
-
-    <div class="product-box">
-      <img src="assets/images/introduction stockvel.jpeg" alt="Income">
-      <h3>Generate R27500 income</h3>
-      <p> 18 older South Africans only.Comment STOCKVEL INFO for details</p>
-    </div>
-
-  </div>
+<!-- ABOUT -->
+<section>
+  <h2>About Me</h2>
+  <p style="text-align:center;">
+    My name is Mr W Sisam. My mission is to help people rise
+    financially, emotionally, and spiritually.
+  </p>
 </section>
-  <!-- BENEFITS -->
-  <section class="benefits">
-    <h2>What You Will Gain</h2>
 
-    <div class="benefit-container">
-      <div class="benefit-box">
-        <h3>Free Guidance & Support</h3>
-        <p>Simple, clear steps to help you grow and rebuild with business.</p>
-      </div>
+<!-- CONTACT -->
+<section id="contact" style="text-align:center;">
+  <h2>Contact</h2>
+  <a href="https://wa.me/27783798191" class="cta-button" target="_blank">
+    Message Me on WhatsApp
+  </a>
+  <p>
+    <a href="mailto:wilmendit@gmail.com">✉️ wilmendit@gmail.com</a>
+  </p>
+</section>
 
-      <div class="benefit-box">
-        <h3>Real Income Tools</h3>
-        <p>Opportunities with systems that help you earn from home.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section class="about">
-    <h2>About Me</h2>
-    <p>
-      My name is Mr W Sisam. My mission is to help people rise
-      financially, emotionally, and spiritually.
-    </p>
-    <p>
-      Life has storms, but with the right support,
-      you can rebuild stronger than before.
-    </p>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact" style="text-align:center;">
-    <h2>Contact</h2>
-    <p>
-      <a href="https://wa.me/27783798191" class="cta-button" target="_blank">
-        Message Me on WhatsApp
-      </a>
-    </p>
-    <p>
-      <a href="mailto:wilmendit@gmail.com">✉️ wilmendit@gmail.com</a>
-    </p>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    <p>© 2025 WMi Virtualhouse. All rights reserved.</p>
-    <p>Built with purpose. Inspired by Faith in Yeshua.</p>
-  </footer>
+<footer>
+  <p>© 2025 WMi Virtualhouse. All rights reserved.</p>
+  <p>Built with purpose. Inspired by Faith in Yeshua.</p>
+</footer>
 
 </body>
 </html>
