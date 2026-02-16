@@ -334,3 +334,6 @@ nav a {
   max-height: 90%;
   border-radius: 10px;
   }
+nav a:hover {
+  color: #25D366;
+}
