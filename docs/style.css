@@ -1,4 +1,52 @@
-<style>
+/* NAVBAR */
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background: #000; /* Change to your preferred color */
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.nav-links a:hover {
+  color: #00e676; /* Highlight color */
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 600px) {
+  .nav-links {
+    gap: 12px;
+  }
+
+  .nav-links a {
+    font-size: 16px;
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+}<style>
 html {
   scroll-behavior: smooth;
 }
