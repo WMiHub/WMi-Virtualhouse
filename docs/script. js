@@ -6,3 +6,8 @@ function openPopup(src) {
 function closePopup() {
   document.getElementById("popup").style.display = "none";
 }
+<script>
+function toggleMenu() {
+  document.getElementById("navLinks").classList.toggle("active");
+}
+</script>
