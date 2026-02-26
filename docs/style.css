@@ -11,6 +11,9 @@
   top: 0;
   z-index: 1000;
 }
+.nav-links {
+  z-index: 999;
+}
 
 .logo {
   font-size: 20px;
