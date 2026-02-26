@@ -35,6 +35,10 @@
 .nav-links a:hover {
   color: #00e676; /* Highlight color */
 }
+header {
+  position: relative;
+  z-index: 1000;
+}
 
 /* MOBILE RESPONSIVE */
 @media (max-width: 600px) {
