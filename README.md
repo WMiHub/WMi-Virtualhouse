@@ -1,2 +1,2 @@
 # WMi-Virtualhouse 
-Vehicles,Locks,Watkins Products, Beard Kit, Create an asset-based recurring income opportunity.
+Wholesale Locks and Security, Hardware & Homeware supply in South Africa
