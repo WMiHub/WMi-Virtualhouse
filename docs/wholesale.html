@@ -1,274 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <style>
-  .wholesale-img {
-    width: 100%;
-    max-width: 350px; /* reduce size */
-    height: auto;
-    display: block;
-    margin: 0 auto 20px auto;
-  }
-
-  .wholesale-section {
-    max-width: 800px;
-    margin: auto;
-    padding: 20px;
-    text-align: center;
-  }
-
-  h1 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  </style>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Wholesale Supply | WMi Supply</title>
 
   <style>
     body {
       font-family: Arial, sans-serif;
-      margin: 0;
-      background: #f9f9f9;
-      color: #222;
-    }
-
-    nav {
-      background: #111;
-      padding: 15px 20px;
-    }
-
-    nav ul {
-      list-style: none;
+      background: #f1f1f1;
       margin: 0;
       padding: 0;
-      display: flex;
-      gap: 20px;
     }
 
-    nav a {
+    /* Header */
+    header {
+      background: #111;
+      padding: 15px 25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       color: white;
-      text-decoration: none;
+      font-size: 18px;
       font-weight: bold;
     }
 
-    nav a:hover {
+    header a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+    }
+
+    header a:hover {
       text-decoration: underline;
     }
 
-    .container {
-      max-width: 1000px;
-      margin: auto;
-      padding: 60px 20px;
+    /* Page Title */
+    .page-title {
       text-align: center;
+      padding: 40px 20px 10px;
+      font-size: 32px;
+      font-weight: bold;
+      color: #222;
+    }
+
+    /* Grid */
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 25px;
+      padding: 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    /* Product Card */
+    .product-box {
+      background: #fff;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+
+    .product-box:hover {
+      transform: scale(1.03);
+    }
+
+    /* Product Images */
+    .product-box img {
+      width: 100%;
+      max-width: 140px;
+      height: auto;
+      margin: 0 auto;
+      display: block;
+    }
+
+    .product-box h3 {
+      font-size: 16px;
+      margin: 10px 0 5px;
+      color: #333;
+    }
+
+    .product-box p {
+      font-size: 13px;
+      color: #555;
     }
 
     footer {
       background: #111;
       color: white;
       text-align: center;
-      padding: 30px 10px;
-      margin-top: 60px;
+      padding: 25px 10px;
+      margin-top: 40px;
     }
   </style>
 </head>
-
 <body>
 
-<!-- Navigation -->
-<header class="navbar">
-  <div class="logo">WMi Supply</div>
-
-  <nav class="nav-links">
+<header>
+  <div>WMi Supply</div>
+  <nav>
     <a href="index.html">Home</a>
     <a href="padlocks.html">Padlocks</a>
     <a href="wholesale.html">Wholesale</a>
     <a href="contact.html">Contact</a>
   </nav>
 </header>
-  
-<section class="wholesale">
-<div class="container">
-  <h1>Wholesale Supply</h1>
-  
-  <div class="products-grid">
-    
- <div class="product-box">
-    <img src="assets/images/HSFR001.jpeg" alt="Wholesale Supply">
+
+<h1 class="page-title">Wholesale Supply</h1>
+
+<div class="products-grid">
+
+  <!-- Example Product -->
+  <div class="product-box">
+    <img src="assets/images/HSFR001.jpeg" alt="Fly Ribbon" />
     <h3>Fly Ribbon</h3>
     <p>Everyday hardware needs.</p>
   </div>
-  
- <div class="product-box">
-    <img src="assets/images/HSCAF001.jpg" alt="Wholesale Supply">
-    <h3>Car Air fresheners</h3>
-    <p>Everyday hardware needs.</p>
-  </div>
-   
- <div class="product-box">
-    <img src="assets/images/HSACFTP12P.png" alt="Wholesale Supply">
-    <h3>Arts & Craft Felt Tip Pens 12 piece</h3>
-    <p>Everyday hardware needs.</p>
-  </div>
-   
- <div class="product-box">
-    <img src="assets/images/HSCB002.png" alt="Wholesale Supply">
-    <h3>Candle Birthday nr 2</h3>
-    <p>Everyday hardware needs.</p>
-  </div>
-    
-    <div class="product-box">
-    <img src="assets/images/HSCPRW002.png" alt="Wholesale Supply">
-    <h3>Candle pillar round white</h3>
-    <p>Everyday hardware needs.</p>
-  </div>
- 
- <div class="product-box">
-    <img src="assets/images/HSEM001.png" alt="Wholesale Supply">
-    <h3>Earphones Mini</h3>
-    <p>Everyday hardware needs.</p>
-  </div>
-    
-    <div class="product-box">
-    <img src="assets/images/HSEMU001.png" alt="Wholesale Supply">
-    <h3>Earphone Metallic Ultra</h3>
-    <p>Everyday hardware needs.</p>
-  </div>
-  
-   <div class="product-box">
-    <img src="assets/images/HSFDEA4001.png" alt="Wholesale Supply">
-    <h3>File Display Envelope A4</h3>
-    <p>Everyday hardware needs.</p>
-  </div>
-    
-    <div class="product-box">
-    <img src="assets/images/HSGKAK5O001.png" alt="Wholesale Supply">
-    <h3>Glove Kids ACR Knit</h3>
-    <p>Everyday hardware needs.</p>
-  </div>
-    
-    <h1>Wholesale Supply</h1>
- <div class="product-box">
-    <img src="assets/images/HSHFA001.png" alt="Wholesale Supply">
-    <h3>Headphones Foldable Asst</h3>
-    <p>Everyday hardware needs.</p>
-  </div>
-      </div>
-  
-   <div class="product-box">
-    <img src="assets/images/HSHPWM001.png" alt="Wholesale Supply">
-    <h3>Headphones with mic</h3>
-    <p>Everyday hardware needs.</p>
-  </div>
-  
-   <div class="product-box">
-    <img src="assets/images/HSHWM1.2M.png" alt="Wholesale Supply">
-    <h3>Headphones with mic 1.2m</h3>
-    <p>Everyday hardware needs.</p>
-  </div>
-  
-    <div class="product-box">
-    <img src="assets/images/HSMDGP.png" alt="Wholesale Supply">
-    <h3>Mugs Daily Gold Print</h3>
-    <p>Everyday hardware needs.</p>
-  </div>
-  
+
   <div class="product-box">
-    <img src="assets/images/HSMDMW001.png" alt="Wholesale Supply">
-    <h3>Mugs Daily Matte White</h3>
-    <p>Everyday hardware needs.</p>
-  </div>
-  
-    <div class="product-box">
-    <img src="assets/images/HSMNJ700ML.png" alt="Wholesale Supply">
-    <h3>Mug Novelty Jumbo 700ml</h3>
-    <p>Everyday hardware needs.</p>
-  </div>
-  
- <div class="product-box">
-    <img src="assets/images/HSMODB001.png" alt="Wholesale Supply">
-    <h3>Mug Occasions Dad Black</h3>
+    <img src="assets/images/HSCAF001.jpg" alt="Car Air Freshener" />
+    <h3>Car Air Fresheners</h3>
     <p>Everyday hardware needs.</p>
   </div>
 
- <div class="product-box">
-    <img src="assets/images/HSMOLGS.png" alt="Wholesale Supply">
-    <h3>Mug Occasions Love Gift Set</h3>
-    <p>Everyday hardware needs.</p>
-  </div>
-    
-   <div class="product-box">
-    <img src="assets/images/HSMOLS001.png" alt="Wholesale Supply">
-    <h3>Mug Occasions Love Straight</h3>
-    <p>Everyday hardware needs.</p>
-  </div>
-  
-    <div class="product-box">
-    <img src="assets/images/HSMOLWC.png" alt="Wholesale Supply">
-    <h3>Mug Occasions Love W/Clay</h3>
-    <p>Everyday hardware needs.</p>
-  </div>
-  
   <div class="product-box">
-    <img src="assets/images/HSVGC001.png" alt="Wholesale Supply">
-    <h3>Vase Glass Coloured</h3>
+    <img src="assets/images/HSACFTP12P.png" alt="Felt Tip Pens" />
+    <h3>Art & Craft Felt Tip Pens (12pcs)</h3>
     <p>Everyday hardware needs.</p>
   </div>
-  
-    <div class="product-box">
-    <img src="assets/images/HSVGFC001.png" alt="Wholesale Supply">
-    <h3>Vase Glass Florist</h3>
-    <p>Everyday hardware needs.</p>
-  </div>
-  
- <div class="product-box">
-    <img src="assets/images/HSWC100ML.png" alt="Wholesale Supply">
-    <h3>Whiteboard Cleaner 100ml</h3>
-    <p>Everyday hardware needs.</p>
-  </div>
-     
- <div class="product-box">
-    <img src="assets/images/HSWH001.png" alt="Wholesale Supply">
-    <h3>Wireless Headphones</h3>
-    <p>Everyday hardware needs.</p>
-  </div>
-  
- <div class="product-box">
-    <img src="assets/images/HSWS15CM.png" alt="Wholesale Supply">
-    <h3>Wireless Speaker 15cm</h3>
-    <p>Everyday hardware needs.</p>
-  </div>
-  
-    <div class="product-box">
-    <img src="assets/images/HSWS37CM.png" alt="Wholesale Supply">
-    <h3>Wireless Speaker 37cm</h3>
-    <p>Everyday hardware needs.</p>
-  </div>
-  
-  <div class="product-box">
-    <img src="assets/images/HSWSM001.png" alt="Wholesale Supply">
-    <h3>Wireless Speaker Mini</h3>
-    <p>Everyday hardware needs.</p>
-   </div>
-  </div>
-</section>  
-  <p>
-    WMi supplies bulk padlocks and selected hardware
-    to hardware stores and contractors across South Africa.
-  </p>
 
-  <p>
-    We focus on high-demand products with competitive margins and reliable supply.
-  </p>
+  <!-- Your other product boxes go here (same format) -->
 
-  <p>
-    For pricing and bulk orders, please contact us directly.
-  </p>
 </div>
 
 <footer>
-  © 2026 WMi Virtualhouse
+  © 2026 WMi Virtualhouse | Wholesale Division
 </footer>
 
 </body>
