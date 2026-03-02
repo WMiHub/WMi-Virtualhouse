@@ -1,124 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Padlocks & Hardware | WMi Supply</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Padlocks | WMi Supply</title>
 
-  <link rel="icon" href="assets/images/wmihub.jpg" type="image/jpg">
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+  }
 
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #f9f9f9;
-      color: #222;
-    }
+  /* Header */
+  header {
+    background: #111;
+    padding: 15px 20px;
+    color: white;
+  }
 
-    nav {
-      background: #111;
-      padding: 15px 20px;
-    }
+  header .nav {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-    nav ul {
-      display: flex;
-      gap: 20px;
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
+  header a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+  }
 
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
+  header a:hover {
+    text-decoration: underline;
+  }
 
-    nav a:hover {
-      text-decoration: underline;
-    }
+  /* Product Grid */
+  .container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 30px 20px;
+  }
 
-    h1 {
-      text-align: center;
-      margin-top: 40px;
-    }
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+  }
 
-    .products-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-      padding: 40px 20px;
-      max-width: 1100px;
-      margin: auto;
-    }
+  .product-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.15);
+    text-align: center;
+    transition: 0.2s;
+  }
 
-    .product-box {
-      background: #fff;
-      border: 1px solid #ddd;
-      border-radius: 10px;
-      padding: 20px;
-      text-align: center;
-    }
+  .product-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+  }
 
-    .product-box img {
-      max-width: 100%;
-      height: auto;
-      margin-bottom: 15px;
-    }
+  .product-box img {
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+    margin-bottom: 15px;
+  }
 
-    footer {
-      background: #111;
-      color: white;
-      text-align: center;
-      padding: 30px 10px;
-      margin-top: 40px;
-    }
-  </style>
+  .product-box h3 {
+    margin: 10px 0;
+    font-size: 18px;
+  }
+
+  .product-box p {
+    font-size: 14px;
+    color: #555;
+  }
+
+  .whatsapp-btn {
+    display: block;
+    margin-top: 15px;
+    background: #25D366;
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .whatsapp-btn:hover {
+    background: #1ebe5d;
+  }
+
+  footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 50px;
+  }
+</style>
 </head>
 
 <body>
 
-<!-- Navigation -->
-<header class="navbar">
-  <div class="logo">WMi Supply</div>
-
-  <nav class="nav-links" id="navLinks">
-    <a href="index.html">Home</a>
-    <a href="padlocks.html">Padlocks</a>
-    <a href="wholesale.html">Wholesale</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+<header>
+  <div class="nav">
+    <div class="logo">WMi Virtualhouse</div>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="padlocks.html">Padlocks</a>
+      <a href="wholesale.html">Wholesale</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
 </header>
 
-<h1>Padlocks & Hardware</h1>
+<div class="container">
+  <h1 style="text-align:center; margin-bottom:30px;">Padlocks & Security</h1>
 
-<div class="products-grid">
+  <div class="products-grid">
 
-  <div class="product-box">
-    <img src="assets/images/padlocks1.png" alt="38mm Padlock">
-    <img src="assets/images/padlocks1a.png" alt="38mm Padlock">
-    <img src="assets/images/padlocks1b.png" alt="38mm Padlock">
-    <img src="assets/images/padlocks1c.png" alt="38mm Padlock">
-    <h3>38mm longshackle and std Padlock</h3>
-    <p>Affordable padlocks ideal for retail hardware shops.</p>
+    <!-- PRODUCT 1 -->
+    <div class="product-box">
+      <img src="assets/images/padlocks1b.png" alt="Premium Padlock">
+      <h3>Premium Steel Padlock 40mm</h3>
+      <p>Strong & durable. Ideal for gates & storage.</p>
+      <a class="whatsapp-btn"
+         href="https://wa.me/27783798191?text=Hi%2C%20I%27m%20interested%20in%20Premium%20Steel%20Padlock%2040mm"
+         target="_blank">Enquire on WhatsApp</a>
+    </div>
+
+    <!-- PRODUCT 2 -->
+    <div class="product-box">
+      <img src="assets/images/locksa.png" alt="Security Lock">
+      <h3>Heavy Duty Padlock 50mm</h3>
+      <p>High-security hardened steel body.</p>
+      <a class="whatsapp-btn"
+         href="https://wa.me/27783798191?text=Hi%2C%20I%27m%20interested%20in%20Heavy%20Duty%20Padlock%2050mm"
+         target="_blank">Enquire on WhatsApp</a>
+    </div>
+
+    <!-- PRODUCT 3 -->
+    <div class="product-box">
+      <img src="assets/images/padlocks1a.png" alt="Outdoor Padlock">
+      <h3>Weatherproof Padlock 45mm</h3>
+      <p>Rust-resistant for outdoor use.</p>
+      <a class="whatsapp-btn"
+         href="https://wa.me/27783798191?text=Hi%2C%20I%27m%20interested%20in%20Weatherproof%20Padlock%2045mm"
+         target="_blank">Enquire on WhatsApp</a>
+    </div>
+
+    <!-- PRODUCT 4 -->
+    <div class="product-box">
+      <img src="assets/images/padlocks1.png" alt="Keyed Alike Set">
+      <h3>Longshackle Keyed-Alike Padlocks</h3>
+      <p>One key opens both locks.</p>
+      <a class="whatsapp-btn"
+         href="https://wa.me/27783798191?text=Hi%2C%20I%27m%20interested%20in%20Keyed-Alike%202-Pack%20Padlocks"
+         target="_blank">Enquire on WhatsApp</a>
+    </div>
+
   </div>
-
-  <div class="product-box">
-    <img src="assets/images/locksa.png" alt="50mm Padlock">
-    <h3>50mm Security Padlock</h3>
-    <p>Stronger build for contractors and everyday security needs.</p>
-  </div>
-
-  <div class="product-box">
-    <img src="assets/images/padlock4.jpeg" alt="70mm and above Padlock">
-    <h3>70mm and above High-Security Padlock</h3>
-    <p>High-security solutions for warehouses and commercial use.</p>
-  </div>
-
 </div>
 
 <footer>
-  © 2026 WMi Virtualhouse
+  © 2026 WMi Virtualhouse — Securing South Africa
 </footer>
 
 </body>
