@@ -1,4 +1,35 @@
-/* Fix overlapping menu */
+/* Fix header overlap */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Push hero section down so menu does NOT overlap it */
+.hero {
+  padding-top: 120px; /* adjust if needed */
+}
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+
+  /* Make top spacing bigger for mobile */
+  .hero {
+    padding-top: 160px;
+  }
+
+  /* Reduce heading size on mobile */
+  .hero h1 {
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  /* Ensure nav links don't wrap weirdly */
+  nav a {
+    font-size: 14px;
+    padding: 5px;
+  }
+}/* Fix overlapping menu */
 .navbar {
   display: flex;
   justify-content: space-between;
