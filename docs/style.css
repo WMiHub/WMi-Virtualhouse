@@ -1,4 +1,46 @@
-/* NAVBAR */
+/* Fix overlapping menu */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background: #111;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.logo {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* MOBILE FIX — stack menu or reduce size */
+@media (max-width: 600px) {
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 32px;
+    line-height: 38px;
+  }
+}/* NAVBAR */
 .navbar {
   width: 100%;
   display: flex;
