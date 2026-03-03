@@ -5,7 +5,8 @@ header {
   z-index: 1000;
 }
 
-/* Push hero section down so menu does NOT overlap it */
+
+}/* Push hero section down so menu does NOT overlap it */
 .hero {
   padding-top: 120px; /* adjust if needed */
 }
@@ -587,3 +588,8 @@ nav ul li a {
     grid-template-columns: 1fr;
   }
 }
+/* Fix Facebook app browser overlapping header */
+@media (max-width: 600px) {
+  .hero-section {
+    padding-top: 120px !important;
+  }
