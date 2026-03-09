@@ -854,5 +854,17 @@ Ask Bulk Quote
 <div id="popup" class="image-popup" onclick="closePopup()">
 <img id="popup-img">
 </div>
+  <script>
+
+function openPopup(src){
+document.getElementById("popup").style.display="flex";
+document.getElementById("popup-img").src=src;
+}
+
+function closePopup(){
+document.getElementById("popup").style.display="none";
+}
+
+</script>
 </body>
 </html>
