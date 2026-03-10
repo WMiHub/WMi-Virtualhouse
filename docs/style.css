@@ -472,7 +472,7 @@ nav a {
   padding: 40px 20px;
 }
 
-.product-box {
+.product-card {
   background: #fff;
   padding: 20px;
   border-radius: 8px;
@@ -481,11 +481,11 @@ nav a {
   transition: transform 0.2s ease;
 }
 
-.product-box:hover {
+.product-card:hover {
   transform: translateY(-5px);
 }
 
-.product-box img {
+.product-card img {
   width: 100%;
   height: 180px;
   object-fit: cover;
@@ -574,7 +574,7 @@ nav ul li a {
   margin-top: 30px;
 }
 
-.product-box {
+.product-card {
   background: #fff;
   padding: 15px;
   border-radius: 8px;
@@ -582,12 +582,12 @@ nav ul li a {
   text-align: center;
 }
 
-.product-box h3 {
+.product-card h3 {
   font-size: 16px;
   margin: 10px 0 5px;
 }
 
-.product-box p {
+.product-card p {
   font-size: 14px;
   color: #666;
 }
