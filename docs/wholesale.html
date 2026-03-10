@@ -1517,5 +1517,28 @@ document.getElementById("popup").style.display="none";
 }
 
 </script>
+  <script>
+
+function searchProducts(){
+
+let input = document.getElementById("productSearch").value.toLowerCase();
+
+let products = document.querySelectorAll(".product-card");
+
+products.forEach(function(card){
+
+let text = card.innerText.toLowerCase();
+
+if(text.includes(input)){
+card.style.display="block";
+}else{
+card.style.display="none";
+}
+
+});
+
+}
+
+</script>
 </body>
 </html>
