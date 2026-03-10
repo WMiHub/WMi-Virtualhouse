@@ -952,4 +952,16 @@ transform:translateY(-5px);
 box-shadow:0 10px 20px rgba(0,0,0,0.4);
 transition:0.3s;
 }
-  
+  .search-box{
+text-align:center;
+margin:30px;
+}
+
+.search-box input{
+width:60%;
+max-width:400px;
+padding:12px;
+font-size:16px;
+border-radius:8px;
+border:1px solid #ccc;
+}
