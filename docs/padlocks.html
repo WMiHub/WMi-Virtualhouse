@@ -98,26 +98,30 @@
     }
   </style>
 </head>
-
 <body>
 
 <header>
-  <div class="nav">
-    <div class="logo">WMi Virtualhouse</div>
-    <div>
-      <a href="index.html">Home</a>
-      <a href="padlocks.html">Padlocks</a>
-      <a href="wholesale.html">Wholesale</a>
-      <a href="contact.html">Contact</a>
-    </div>
-  </div>
+  <div>WMi Supply</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="padlocks.html">Padlocks</a>
+    <a href="wholesale.html">Wholesale</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 </header>
 
-<div class="container">
-  <h1 style="text-align:center; margin-bottom:30px;">Padlocks & Security</h1>
+<h1 style="text-align:center;">Wholesale Supply</h1>
+<div class="search-box">
 
-<section class="product-grid">
+<input 
+type="text" 
+id="productSearch" 
+placeholder="Search products..."
+onkeyup="searchProducts()">
 
+</div>
+<section class="products-grid">
+  
  <div class="product-card">
    <div class="wholesale">Locks</div>
 <img src="assets/images/comb358dlc.png" onclick="openPopup(this.src)">
