@@ -5,7 +5,35 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Padlocks | WMi Supply</title>
 
+  <div style="text-align:center; margin-bottom:20px;">
+  <input 
+    type="text" 
+    id="productSearch" 
+    placeholder="Search padlocks..." 
+    onkeyup="searchProducts()"
+    style="padding:10px; width:80%; max-width:400px; border-radius:8px; border:1px solid #ccc;">
+</div>
+  
 <style>
+
+  .image-popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.image-popup img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+}
   body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -49,7 +77,7 @@
     }
 
     /* Product Card */
-    .product-box {
+    .product-card {
       background: #fff;
       padding: 15px;
       border-radius: 10px;
@@ -58,12 +86,12 @@
       transition: transform 0.2s ease;
     }
 
-    .product-box:hover {
+    .product-card:hover {
       transform: scale(1.03);
     }
 
     /* Product Images */
-    .product-box img {
+    .product-card img {
       width: 100%;
       max-width: 140px;
       height: auto;
@@ -71,13 +99,13 @@
       display: block;
     }
 
-    .product-box h3 {
+    .product-card h3 {
       font-size: 16px;
       margin: 10px 0 5px;
       color: #333;
     }
 
-    .product-box p {
+    .product-card p {
       font-size: 13px;
       color: #555;
     }
@@ -89,7 +117,7 @@
       padding: 25px 10px;
       margin-top: 40px;
     }
-  </style>
+ 
   
   .whatsapp-btn {
     display: block;
@@ -105,7 +133,9 @@
   .whatsapp-btn:hover {
     background: #1ebe5d;
   }
-
+  
+ </style>
+  
   footer {
     background: #111;
     color: white;
@@ -276,134 +306,7 @@ Ask Bulk Quote
 </a>
 </div>
 
-  <div class="product-card">
-   <div class="wholesale">Locks</div>
-<img src="assets/images/ccr44cmc.png" onclick="openPopup(this.src)">
-<div class="product-title">Padlock cable combo resetable </div>
-<div class="product-desc">General Merchandise.</div>
-<div class="product-price">R44.78</div>
-
-    <a class="whatsapp-btn"
-href="https://wa.me/27783798191?text=Hi%20I%20want%20a%20bulk%20quote%20for%20The%20Padlocks%20Supply"
-target="_blank">
-Ask Bulk Quote
-</a>
-</div>
-
    <div class="product-card">
-     <div class="wholesale">Locks</div>
-<img src="assets/images/cc4wrc.png" onclick="openPopup(this.src)">
-<div class="product-title">Padlock combo brs 4 whl reset 21x35mm</div>
-<div class="product-desc">General Merchandise.</div>
-<div class="product-price">R84.78</div>
-
-     <a class="whatsapp-btn"
-href="https://wa.me/27783798191?text=Hi%20I%20want%20a%20bulk%20quote%20for%20The%20Padlocks%20Supply"
-target="_blank">
-Ask Bulk Quote
-</a>
-</div>
-
-
- <div class="product-card">
-   <div class="wholesale">Locks</div>
-<img src="assets/images/czi50mmc.png" onclick="openPopup(this.src)">
-<div class="product-title">Padlock zenith iron 50mm </div>
-<div class="product-desc">General Merchandise.</div>
-<div class="product-price">R78.38</div>
-
-    <a class="whatsapp-btn"
-href="https://wa.me/27783798191?text=Hi%20I%20want%20a%20bulk%20quote%20for%20The%20Wholesale%20Supply"
-target="_blank">
-Ask Bulk Quote
-</a>
-</div>
-
-   <div class="product-card">
-     <div class="wholesale">Locks</div>
-<img src="assets/images/cracomb001.png" onclick="openPopup(this.src)">
-<div class="product-title">Padlock combo reset asst col</div>
-<div class="product-desc">General Merchandise.</div>
-<div class="product-price">R47.98</div>
-     
-    <a class="whatsapp-btn"
-href="https://wa.me/27783798191?text=Hi%20I%20want%20a%20bulk%20quote%20for%20The%20Padlocks%20Supply"
-target="_blank">
-Ask Bulk Quote
-</a>
-</div>
-
-  <div class="product-card">
-   <div class="wholesale">Locks</div>
-<img src="assets/images/cb20mmkc.png" onclick="openPopup(this.src)">
-<div class="product-title">Padlock zenith brass 20mm key-alike crd2</div>
-<div class="product-desc">General Merchandise.</div>
-<div class="product-price">R115.18</div>
-     
-    <a class="whatsapp-btn"
-href="https://wa.me/27783798191?text=Hi%20I%20want%20a%20bulk%20quote%20for%20The%20Padlocks%20Supply"
-target="_blank">
-Ask Bulk Quote
-</a>
-</div>
-
- <div class="product-card">
-   <div class="wholesale">Locks</div>
-<img src="assets/images/cb38mmc.png" onclick="openPopup(this.src)">
-<div class="product-title">Padlock zenith brass 38mm</div>
-<div class="product-desc">General Merchandise.</div>
-<div class="product-price">R124.78</div>
-
-    <a class="whatsapp-btn"
-href="https://wa.me/27783798191?text=Hi%20I%20want%20a%20bulk%20quote%20for%20The%20Padlocks%20Supply"
-target="_blank">
-Ask Bulk Quote
-</a>
-</div>
-
-   <div class="product-card">
-     <div class="wholesale">Locks</div>
-<img src="assets/images/cb32mmc.png" onclick="openPopup(this.src)">
-<div class="product-title">Padlock zenith brass 32mm</div>
-<div class="product-desc">General Merchandise.</div>
-<div class="product-price">R84.78</div>
-
-     <a class="whatsapp-btn"
-href="https://wa.me/27783798191?text=Hi%20I%20want%20a%20bulk%20quote%20for%20The%20Padlocks%20Supply"
-target="_blank">
-Ask Bulk Quote
-</a>
-</div>
-
- <div class="product-card">
-   <div class="wholesale">Locks</div>
-<img src="assets/images/cbs70mmc.png" onclick="openPopup(this.src)">
-<div class="product-title">Padlock brass security 70x48x18mm</div>
-<div class="product-desc">General Merchandise.</div>
-<div class="product-price">R303.98</div>
-
-    <a class="whatsapp-btn"
-href="https://wa.me/27783798191?text=Hi%20I%20want%20a%20bulk%20quote%20for%20The%20Wholesale%20Supply"
-target="_blank">
-Ask Bulk Quote
-</a>
-</div>
-
-   <div class="product-card">
-     <div class="wholesale">Locks</div>
-<img src="assets/images/ccomb35mmc.png" onclick="openPopup(this.src)">
-<div class="product-title">Padlock combination 35mm 8-digit</div>
-<div class="product-desc">General Merchandise.</div>
-<div class="product-price">R84.98</div>
-     
-    <a class="whatsapp-btn"
-href="https://wa.me/27783798191?text=Hi%20I%20want%20a%20bulk%20quote%20for%20The%20Padlocks%20Supply"
-target="_blank">
-Ask Bulk Quote
-</a>
-</div>  
-
-  <div class="product-card">
    <div class="wholesale">Locks</div>
 <img src="assets/images/cdss70mmc.png" onclick="openPopup(this.src)">
 <div class="product-title">Padlock discus s/steel 70mm</div>
