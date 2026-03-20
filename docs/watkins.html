@@ -461,9 +461,45 @@ Ask Bulk Quote
 </section>
 
 <footer>
-  <p>© 2026 WMi Virtualhouse. All rights reserved.</p>
-  <p>Built with purpose. Inspired by Faith.</p>
+  © 2026 WMi Virtualhouse | Wholesale Division
 </footer>
+<div id="popup" class="image-popup" onclick="closePopup()">
+<img id="popup-img">
+</div>
+  <script>
 
+function openPopup(src){
+document.getElementById("popup").style.display="flex";
+document.getElementById("popup-img").src=src;
+}
+
+function closePopup(){
+document.getElementById("popup").style.display="none";
+}
+
+</script>
+  <script>
+
+function searchProducts(){
+
+let input = document.getElementById("productSearch").value.toLowerCase();
+
+let products = document.querySelectorAll(".product-card");
+
+products.forEach(function(card){
+
+let text = card.innerText.toLowerCase();
+
+if(text.includes(input)){
+card.style.display="block";
+}else{
+card.style.display="none";
+}
+
+});
+
+}
+
+</script>
 </body>
 </html>
