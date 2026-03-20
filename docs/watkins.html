@@ -3,26 +3,67 @@
 <head>
   <meta charset="UTF-8">
   <title>Watkins Products | WMi Virtualhouse</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Watkins health and household products available across South Africa.">
-  <link rel="icon" href="assets/images/wmihub.jpg" type="image/jpg">
+    /* Page Title */
+    .page-title {
+      text-align: center;
+      padding: 40px 20px 10px;
+      font-size: 32px;
+      font-weight: bold;
+      color: #222;
+    }
 
-  <style>
-    body { margin:0; font-family: Arial, Helvetica, sans-serif; line-height:1.6; background:#f9f9f9; color:#222; scroll-behavior:smooth; }
-    img { max-width:100%; height:auto; display:block; }
-    a.cta-button { display:inline-block; margin-top:20px; padding:12px 24px; background:#25D366; color:white; text-decoration:none; border-radius:6px; font-weight:bold; transition:0.2s ease-in-out; }
-    a.cta-button:hover { background:#1ebe5d; transform:scale(1.05); }
+    /* Grid */
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 25px;
+      padding: 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
 
-    section { padding:60px 20px; max-width:1100px; margin:auto; }
-    h1,h2 { text-align:center; margin-bottom:20px; }
+    /* Product Card */
+    .product-card {
+      background: #fff;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
 
-    .products-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:24px; margin-top:30px; }
-    .product-box { border:1px solid #ddd; border-radius:10px; padding:15px; background:#fff; text-align:center; }
-    .product-box h3 { margin:15px 0 5px; }
-    .product-box p { font-size:0.95rem; color:#555; }
+    .product-card:hover {
+      transform: scale(1.03);
+    }
 
-    footer { background:#111; color:white; text-align:center; padding:30px 10px; }
-  </style>
+    /* Product Images */
+    .product-card img {
+      width: 100%;
+      max-width: 140px;
+      height: auto;
+      margin: 0 auto;
+      display: block;
+    }
+
+    .product-card h3 {
+      font-size: 16px;
+      margin: 10px 0 5px;
+      color: #333;
+    }
+
+    .product-card p {
+      font-size: 13px;
+      color: #555;
+    }
+
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 25px 10px;
+      margin-top: 40px;
+    }
+
 </head>
 
 <body>
