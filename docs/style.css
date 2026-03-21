@@ -10,6 +10,39 @@ header {
 .hero {
   padding-top: 120px; /* adjust if needed */
 }
+.hero {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+}
+
+.hero-text h1 {
+  font-size: 32px;
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+
+.hero-text p {
+  font-size: 16px;
+  line-height: 1.4;
+}
+@media (max-width: 600px) {
+  .hero-text h1 {
+    font-size: 24px;
+  }
+
+  .hero-text p {
+    font-size: 14px;
+  }
+}
 
 /* Mobile adjustments */
 @media (max-width: 600px) {
@@ -72,6 +105,17 @@ header {
     font-size: 32px;
     line-height: 38px;
   }
+  .cta-button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 20px;
+  background: #25D366;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  }
+  
 }/* NAVBAR */
 .navbar {
   width: 100%;
