@@ -1007,3 +1007,12 @@ font-size:16px;
 border-radius:8px;
 border:1px solid #ccc;
 }
+  @media (max-width: 600px) {
+  .hero-text h1 {
+    font-size: 22px;
+  }
+
+  .hero-text p {
+    font-size: 14px;
+  }
+  }
