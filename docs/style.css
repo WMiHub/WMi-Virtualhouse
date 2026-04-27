@@ -1,8 +1,6 @@
 /* Fix header overlap */
 header {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+  position: relative;
 }
 .hero {
   margin-top: 60px; /* pushes it below header */
