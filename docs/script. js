@@ -1,13 +1,14 @@
-function openPopup(src) {
-  document.getElementById("popup-img").src = src;
-  document.getElementById("popup").style.display = "flex";
-}
-
-function closePopup() {
-  document.getElementById("popup").style.display = "none";
-}
 <script>
 function toggleMenu() {
-  document.getElementById("navLinks").classList.toggle("active");
+  document.getElementById("nav-menu").classList.toggle("active");
 }
+
+// Delay closing so click can register
+document.querySelectorAll("#nav-menu a").forEach(link => {
+  link.addEventListener("click", function() {
+    setTimeout(() => {
+      document.getElementById("nav-menu").classList.remove("active");
+    }, 200);
+  });
+});
 </script>
