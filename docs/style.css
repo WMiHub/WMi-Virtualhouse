@@ -113,31 +113,34 @@ header {
 }
 
 /* MOBILE FIX — stack menu or reduce size */
-@media (max-width: 600px) {
-  .nav-links {
+@media (max-width: 768px) {
+
+  .menu-toggle {
+    display: block;
+  }
+
+  #nav-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: #111;
+    z-index: 999; /* IMPORTANT */
+  }
+
+  #nav-menu.active {
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
   }
 
-  .nav-links a {
-    font-size: 14px;
+  #nav-menu a {
+    padding: 15px;
+    display: block;
+    text-align: center;
+    border-top: 1px solid #222;
   }
-
-  h1 {
-    font-size: 32px;
-    line-height: 38px;
-  }
-  .cta-button {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 12px 20px;
-  background: #25D366;
-  color: white;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: bold;
-  }
+}
   
 }/* NAVBAR */
 .navbar {
